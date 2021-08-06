@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>kalkulator</title>
+	<link rel="stylesheet" type="text/css" href="style.css ">
+</head>
+<body>
+
+<div id="container">
+	<div id="calculator">
+    
+      <!-- input Search -->
+      <div class="kanan">
+        <div class="input-div">
+        <input type="text" name="searchBarang" id="inputSearch" onkeyup=Cari();  placeholder="Cari barang..." >
+        </div>
+        <div class="list-div">
+          <ul id="ul">
+        </ul>
+      </div>
+    </div>
+
+
+      <!-- dropdown input -->
+      
+      <div class="kiri">
+        <div class="baris1">
+        <div class="jumlahBarang">
+        <label for="jumlahBarang"><b>Jumlah Barang : </b></label>
+        <input type="number" min=1 name="jumlahBarang" id="jumlahBarang" onchange=setJumlahBarang(this)  value=1>
+      </div>
+        <button onclick=btnTambah() class="btn">+</button>
+      </div>
+      <div class="bungkus-daftar-item">
+   <div id="hargaItem"></div>
+  </div>
+        <h4 class="totalHarga">Total Harga : <span id="totalHarga"></span></h4>
+    <label for=""><b>Dibayar : </b></label>
+    <input type="number" min=0 name="uang" id="input1" onchange=setDibayar()>
+    <br><br>
+    <label for=""><b>Kembalian : </b></label>
+    <b><font Size=5><span id="kembalian">-</span></font></b>
+    <br><br><br>
+    <button onclick=val() class="btn-hitung">Hitung</button>
+    </div>
+	</div>
+</div>
+
+<script src="namaBarang.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

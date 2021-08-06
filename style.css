@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Open sans", sans-serif;
+}
+#calculator {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(180deg, #80e1ff 0%, #03337c 95%);
+  margin: 0 auto;
+
+  position: relative;
+
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 2), 0 6px 20px 0 rgba(0, 0, 0, 0, 19);
+}
+.kanan {
+  width: 30vw;
+  /* border: 3px solid purple; */
+}
+
+.input-div {
+  box-sizing: border-box;
+  width: 100%;
+  /* border: 2px solid rgb(0, 255, 136); */
+}
+#inputSearch {
+  width: 30vw;
+  box-sizing: border-box;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+}
+
+.list-div {
+  box-sizing: border-box;
+  width: 100%;
+  height: 44vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  /* border: 2px solid red; */
+}
+#ul {
+  list-style-type: none;
+}
+#ul li p {
+  position: relative;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 1px solid rgb(72, 170, 170);
+  margin-top: -1px;
+  background-color: rgb(184, 184, 184);
+  padding: 12px;
+  font-size: 18px;
+  color: black;
+  display: block;
+}
+#ul li p:hover:not(.header) {
+  background-color: rgb(161, 161, 161);
+}
+.kiri {
+  width: 30vw;
+  display: inline-block;
+  position: relative;
+  /* border: 2px solid greenyellow; */
+}
+.btn {
+  font-size: 20px;
+  padding: 4px 11px 4px 11px;
+  margin-bottom: 10px;
+}
+.baris1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#jumlahBarang,
+.totalHarga {
+  margin-bottom: 15px;
+}
+.bungkus-daftar-item {
+  max-height: 30vw;
+  overflow-y: scroll;
+}
+.totalHarga {
+  margin-top: 12px;
+}
+
+.daftar-item {
+  margin-bottom: 5px;
+}
+#input1,
+#jumlahBarang {
+  font-size: 16px;
+  padding: 4px 8px 4px 8px;
+}
+.btn,
+.btn-hitung {
+  border-radius: 3px;
+  filter: drop-shadow(3px 5px 4px rgba(70, 70, 70, 0.589));
+  border: none;
+  outline: none;
+}
+.btn:active,
+.btn-hitung:active {
+  transform: translate(3px, 5px);
+}
+.btn:hover,
+.btn-hitung:hover {
+  background-color: rgb(97, 97, 97);
+  color: rgb(255, 255, 255);
+}
+.btn-hitung {
+  color: rgb(41, 41, 41);
+  font-size: 15px;
+  font-weight: 600;
+  padding: 5px 10px 5px 10px;
+  background: #fff;
+}
